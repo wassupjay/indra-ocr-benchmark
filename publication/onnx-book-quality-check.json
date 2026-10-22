@@ -1,0 +1,49 @@
+{
+  "source_pdf_pages": [
+    9,
+    15,
+    26,
+    43,
+    59,
+    65,
+    70,
+    100,
+    101,
+    102,
+    110,
+    111
+  ],
+  "onnx_first_pass": {
+    "reference_words": 5464,
+    "reference_characters": 30113,
+    "word_errors": 136,
+    "character_errors": 340,
+    "wer": 0.024890190336749635,
+    "cer": 0.01129080463587155
+  },
+  "historical_native_same_pages": {
+    "reference_words": 5464,
+    "reference_characters": 30113,
+    "word_errors": 136,
+    "character_errors": 340,
+    "wer": 0.024890190336749635,
+    "cer": 0.01129080463587155
+  },
+  "limitation": "PDF text-layer agreement; historical native model names match but its exact weight hashes were not captured",
+  "historical_results_sha256": "7b0a491e03b8ee2752733c92be1eae96ab8fb5878855576fc549345ebf2af802",
+  "identical_normalized_output_source_pages": [
+    9,
+    15,
+    26,
+    43,
+    59,
+    65,
+    70,
+    100,
+    101,
+    102,
+    110,
+    111
+  ],
+  "all_12_normalized_outputs_match_historical_native": true
+}

@@ -1,0 +1,559 @@
+{
+  "completed": true,
+  "dataset": "eval\\benchmarks\\deployment-onnx-12\\20261018T214953126611Z",
+  "dataset_sha256": "52525badaf5760b9e3be1663927d5547f3443e9cc0d1c619a67a2863988c5e28",
+  "source_pdf_pages": [
+    9,
+    15,
+    26,
+    43,
+    59,
+    65,
+    70,
+    100,
+    101,
+    102,
+    110,
+    111
+  ],
+  "statistics": {
+    "reference_status": "unverified PDF text layer; scores measure agreement, not verified accuracy",
+    "dataset_kind": "pdf_text_layer_subset",
+    "unit": "pages",
+    "uncertainty_method": "paired percentile item bootstrap, 5000 resamples, seed 20261018; descriptive within-sample uncertainty only; source pages or crops are not necessarily independent documents",
+    "models": {
+      "indra": {
+        "wer": 0.024890190336749635,
+        "cer": 0.009862849931923089,
+        "wer_page_bootstrap_95": [
+          0.012107685830033228,
+          0.040943604967704515
+        ],
+        "cer_page_bootstrap_95": [
+          0.002332065453916956,
+          0.023080483679227673
+        ],
+        "word_edits": 136,
+        "word_edit_breakdown": {
+          "replace": 112,
+          "delete": 2,
+          "insert": 22
+        },
+        "exact_text_pages": 1,
+        "pages": 12,
+        "failures_all_passes": 0,
+        "latency_first_pass_seconds": {
+          "mean": 0.7814461000040561,
+          "p50": 0.30102939999778755,
+          "p95": 2.056521280025481,
+          "max": 2.0689724000403658,
+          "min": 0.05566840001847595
+        },
+        "pass_seconds": [
+          9.377353200048674,
+          21.08307670004433,
+          20.415719499986153
+        ],
+        "pass_time_range_seconds": [
+          9.377353200048674,
+          21.08307670004433
+        ],
+        "pass_time_cv_percent": 38.76547384918558,
+        "median_pass_seconds": 20.415719499986153,
+        "pages_per_minute": 35.26694222069853,
+        "initialization_seconds": 0.7710260000312701,
+        "metadata": {
+          "version": "0.3.2",
+          "mode": "ocr",
+          "furniture": true,
+          "output": "page.text (plain recognized lines)",
+          "model_hashes": {
+            "det.onnx": "46b0050ce4c4692f887a1a9c038480223af1c7a91b3fcced2657d9cf00290dc4",
+            "order.onnx": "23635dd2324b4ccc00c408af961273a2dedd2e4f0386bc54dba678c41bcf6b46",
+            "orient.onnx": "8d7bfce5d08bcad55955f41ca494a7f9d9d3ed5d5b6da1f6f276d5c509590729",
+            "rec.onnx": "e243be069b357e56a0e867a21d7482e498df42fb19678bfb67a25f48b1f06151",
+            "rec_cjk.onnx": "4cec840b55e1bb7f375daf30a2975404a867a71ac1a5bc5b1629c4909ce16baa",
+            "script.onnx": "5ba37030e817affede0097a7503b6829624104166c6e0b6aacecacf919fc7d11"
+          }
+        },
+        "hardware": {
+          "platform": "Windows-10-10.0.26200-SP0",
+          "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+          "logical_cpus": 20,
+          "device": "CPU",
+          "threads": 4
+        },
+        "resource_measurements_full_run": {
+          "exit_code": 0,
+          "timed_out": false,
+          "wall_seconds": 52.142593499971554,
+          "sampled_peak_tree_rss_mib": 296.24609375,
+          "sampled_tree_cpu_seconds": 220.59375,
+          "mean_busy_cpu_cores_whole_worker": 4.230586459036035,
+          "sampled_peak_tree_threads": 52,
+          "minimum_system_available_ram_mib": 66345.02734375,
+          "samples": 278,
+          "sampling_seconds": 0.1,
+          "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+        },
+        "worst_wer_pages": [
+          {
+            "page": 4,
+            "wer": 0.09177215189873418
+          },
+          {
+            "page": 7,
+            "wer": 0.06518282988871224
+          },
+          {
+            "page": 3,
+            "wer": 0.03902439024390244
+          },
+          {
+            "page": 8,
+            "wer": 0.025466893039049237
+          },
+          {
+            "page": 2,
+            "wer": 0.022916666666666665
+          }
+        ]
+      },
+      "tesseract": {
+        "wer": 0.02635431918008785,
+        "cer": 0.012386676850529672,
+        "wer_page_bootstrap_95": [
+          0.016033178403818238,
+          0.04014461296372548
+        ],
+        "cer_page_bootstrap_95": [
+          0.0027325715588502526,
+          0.031238826577194814
+        ],
+        "word_edits": 144,
+        "word_edit_breakdown": {
+          "replace": 114,
+          "delete": 15,
+          "insert": 15
+        },
+        "exact_text_pages": 0,
+        "pages": 12,
+        "failures_all_passes": 0,
+        "latency_first_pass_seconds": {
+          "mean": 0.8880100916624846,
+          "p50": 0.9533215499832295,
+          "p95": 1.2187638900242745,
+          "max": 1.3198859000112861,
+          "min": 0.1892558999825269
+        },
+        "pass_seconds": [
+          10.656121099949814,
+          10.581293600029312,
+          10.697599299950525
+        ],
+        "pass_time_range_seconds": [
+          10.581293600029312,
+          10.697599299950525
+        ],
+        "pass_time_cv_percent": 0.5537277092353399,
+        "median_pass_seconds": 10.656121099949814,
+        "pages_per_minute": 67.56679970570069,
+        "initialization_seconds": 0.7282648999826051,
+        "metadata": {
+          "version": "tesseract v5.5.3.20260724\n leptonica-1.87.0\n  libgif 5.2.2 : libjpeg 8d (libjpeg-turbo 3.1.3) : libpng 1.6.58 : libtiff 4.7.2 : zlib 1.3.1 : libwebp 1.6.0 : libopenjp2 2.5.4\n Found AVX2\n Found AVX\n Found FMA\n Found SSE4.1\n Found libarchive 3.8.8 zlib/1.3.2 liblzma/5.8.3 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 expat/expat_2.8.2 cng/1.0 libb2/system\n Found libcurl/8.21.0 Schannel zlib/1.3.2 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.5 libssh2/1.11.1 WinLDAP",
+          "language": "eng",
+          "oem": 1,
+          "psm": 3,
+          "language_data_sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+          "timing_note": "CLI process startup included per page; Python engines stay resident"
+        },
+        "hardware": {
+          "platform": "Windows-10-10.0.26200-SP0",
+          "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+          "logical_cpus": 20,
+          "device": "CPU",
+          "threads": 4
+        },
+        "resource_measurements_full_run": {
+          "exit_code": 0,
+          "timed_out": false,
+          "wall_seconds": 33.200396200001705,
+          "sampled_peak_tree_rss_mib": 112.80078125,
+          "sampled_tree_cpu_seconds": 29.53125,
+          "mean_busy_cpu_cores_whole_worker": 0.8894848670510288,
+          "sampled_peak_tree_threads": 13,
+          "minimum_system_available_ram_mib": 66481.36328125,
+          "samples": 247,
+          "sampling_seconds": 0.1,
+          "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+        },
+        "worst_wer_pages": [
+          {
+            "page": 1,
+            "wer": 0.125
+          },
+          {
+            "page": 7,
+            "wer": 0.06836248012718601
+          },
+          {
+            "page": 4,
+            "wer": 0.060126582278481014
+          },
+          {
+            "page": 3,
+            "wer": 0.036585365853658534
+          },
+          {
+            "page": 8,
+            "wer": 0.025466893039049237
+          }
+        ]
+      },
+      "paddleocr": {
+        "wer": 0.024890190336749635,
+        "cer": 0.01129080463587155,
+        "wer_page_bootstrap_95": [
+          0.011286994355402728,
+          0.039379269106701795
+        ],
+        "cer_page_bootstrap_95": [
+          0.0024438971079765366,
+          0.02928958132209152
+        ],
+        "word_edits": 136,
+        "word_edit_breakdown": {
+          "replace": 122,
+          "delete": 12,
+          "insert": 2
+        },
+        "exact_text_pages": 4,
+        "pages": 12,
+        "failures_all_passes": 0,
+        "latency_first_pass_seconds": {
+          "mean": 18.06099254999329,
+          "p50": 18.95134759999928,
+          "p95": 24.017458409981916,
+          "max": 25.385843999974895,
+          "min": 5.697527699987404
+        },
+        "pass_seconds": [
+          216.7319105999195,
+          217.6441314999829,
+          215.70877869991818
+        ],
+        "pass_time_range_seconds": [
+          215.70877869991818,
+          217.6441314999829
+        ],
+        "pass_time_cv_percent": 0.4468059692469971,
+        "median_pass_seconds": 216.7319105999195,
+        "pages_per_minute": 3.3220765599630506,
+        "initialization_seconds": 2.001526499981992,
+        "metadata": {
+          "version": "3.7.0",
+          "paddlepaddle": "3.2.2",
+          "paddlex": "3.7.2",
+          "settings": {
+            "text_detection_model_name": "PP-OCRv6_medium_det",
+            "text_recognition_model_name": "PP-OCRv6_medium_rec",
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false,
+            "use_textline_orientation": false,
+            "device": "cpu",
+            "cpu_threads": 4,
+            "enable_mkldnn": true,
+            "engine": "onnxruntime",
+            "text_detection_model_dir": ".onnx-models\\PP-OCRv6_medium\\detector",
+            "text_recognition_model_dir": ".onnx-models\\PP-OCRv6_medium\\recognizer",
+            "engine_config": {
+              "onnxruntime": {
+                "providers": [
+                  "CPUExecutionProvider"
+                ],
+                "intra_op_num_threads": 4,
+                "inter_op_num_threads": 1
+              }
+            }
+          },
+          "onnxruntime": "1.31.0",
+          "effective_runtime": {
+            "detector": {
+              "device_type": "cpu",
+              "providers": [
+                "CPUExecutionProvider"
+              ],
+              "intra_op_num_threads": 4,
+              "inter_op_num_threads": 1,
+              "actual_providers": [
+                "CPUExecutionProvider"
+              ],
+              "actual_intra_op_threads": 4,
+              "actual_inter_op_threads": 1,
+              "denormal_as_zero": "1"
+            },
+            "recognizer": {
+              "device_type": "cpu",
+              "providers": [
+                "CPUExecutionProvider"
+              ],
+              "intra_op_num_threads": 4,
+              "inter_op_num_threads": 1,
+              "actual_providers": [
+                "CPUExecutionProvider"
+              ],
+              "actual_intra_op_threads": 4,
+              "actual_inter_op_threads": 1,
+              "denormal_as_zero": "1"
+            }
+          },
+          "model_hashes": {
+            "detector": {
+              "inference.onnx": "fb7111b86f97ad58ae9a61067a1fce5d8c9efa378b9527a9df0a93d5180521bd",
+              "inference.yml": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871"
+            },
+            "recognizer": {
+              "inference.onnx": "e6bb59d9c316b9ca39c8516a4d54347d81d1cbe364d89124a5990d348d376fa0",
+              "inference.yml": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129"
+            }
+          }
+        },
+        "hardware": {
+          "platform": "Windows-10-10.0.26200-SP0",
+          "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+          "logical_cpus": 20,
+          "device": "CPU",
+          "threads": 4
+        },
+        "resource_measurements_full_run": {
+          "exit_code": 0,
+          "timed_out": false,
+          "wall_seconds": 657.3909036000259,
+          "sampled_peak_tree_rss_mib": 3037.0625,
+          "sampled_tree_cpu_seconds": 2387.578125,
+          "mean_busy_cpu_cores_whole_worker": 3.6319001554859756,
+          "sampled_peak_tree_threads": 39,
+          "minimum_system_available_ram_mib": 63513.48046875,
+          "samples": 4741,
+          "sampling_seconds": 0.1,
+          "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+        },
+        "worst_wer_pages": [
+          {
+            "page": 3,
+            "wer": 0.06829268292682927
+          },
+          {
+            "page": 4,
+            "wer": 0.05379746835443038
+          },
+          {
+            "page": 7,
+            "wer": 0.05246422893481717
+          },
+          {
+            "page": 8,
+            "wer": 0.042444821731748725
+          },
+          {
+            "page": 2,
+            "wer": 0.035416666666666666
+          }
+        ]
+      }
+    },
+    "paired_comparisons": [
+      {
+        "left": "indra",
+        "right": "tesseract",
+        "wer_difference_percentage_points": -0.14641288433382138,
+        "wer_difference_95": [
+          -0.49835729331065287,
+          0.38242596353836783
+        ],
+        "cer_difference_percentage_points": -0.2523826918606583,
+        "cer_difference_95": [
+          -0.8376483717963162,
+          0.0032817770218114156
+        ],
+        "page_word_edit_wins_left_ties_right": [
+          8,
+          2,
+          2
+        ]
+      },
+      {
+        "left": "indra",
+        "right": "paddleocr",
+        "wer_difference_percentage_points": 0.0,
+        "wer_difference_95": [
+          -0.912298603651987,
+          0.8916829495827374
+        ],
+        "cer_difference_percentage_points": -0.14279547039484608,
+        "cer_difference_95": [
+          -0.6778856867525798,
+          0.22722180060972438
+        ],
+        "page_word_edit_wins_left_ties_right": [
+          6,
+          1,
+          5
+        ]
+      },
+      {
+        "left": "tesseract",
+        "right": "paddleocr",
+        "wer_difference_percentage_points": 0.14641288433382138,
+        "wer_difference_95": [
+          -0.7783717483518167,
+          0.997685897802874
+        ],
+        "cer_difference_percentage_points": 0.10958722146581223,
+        "cer_difference_95": [
+          -0.14942877273174932,
+          0.3733162102452125
+        ],
+        "page_word_edit_wins_left_ties_right": [
+          4,
+          1,
+          7
+        ]
+      }
+    ],
+    "missing_engines": []
+  },
+  "resources": {
+    "indra": {
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_seconds": 52.142593499971554,
+      "sampled_peak_tree_rss_mib": 296.24609375,
+      "sampled_tree_cpu_seconds": 220.59375,
+      "mean_busy_cpu_cores_whole_worker": 4.230586459036035,
+      "sampled_peak_tree_threads": 52,
+      "minimum_system_available_ram_mib": 66345.02734375,
+      "samples": 278,
+      "sampling_seconds": 0.1,
+      "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+    },
+    "tesseract": {
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_seconds": 33.200396200001705,
+      "sampled_peak_tree_rss_mib": 112.80078125,
+      "sampled_tree_cpu_seconds": 29.53125,
+      "mean_busy_cpu_cores_whole_worker": 0.8894848670510288,
+      "sampled_peak_tree_threads": 13,
+      "minimum_system_available_ram_mib": 66481.36328125,
+      "samples": 247,
+      "sampling_seconds": 0.1,
+      "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+    },
+    "paddleocr": {
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_seconds": 657.3909036000259,
+      "sampled_peak_tree_rss_mib": 3037.0625,
+      "sampled_tree_cpu_seconds": 2387.578125,
+      "mean_busy_cpu_cores_whole_worker": 3.6319001554859756,
+      "sampled_peak_tree_threads": 39,
+      "minimum_system_available_ram_mib": 63513.48046875,
+      "samples": 4741,
+      "sampling_seconds": 0.1,
+      "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+    }
+  },
+  "audit": {
+    "dataset_sha256": "52525badaf5760b9e3be1663927d5547f3443e9cc0d1c619a67a2863988c5e28",
+    "reference_status": "unverified PDF text layer; scores measure agreement, not verified accuracy",
+    "engines": {
+      "indra": {
+        "result_file": "eval/benchmarks/deployment-onnx-12/20261018T214953126611Z/indra/20261018T214954225526Z/results.json",
+        "result_sha256": "99d5fece4d15c2e32e940f9de553ec5101f9d2e2b98525c600e6f7b0b8df7c89",
+        "prediction_sha256": {
+          "page_001.txt": "13bf97e1eea8597658ed3d2b8be3e7afcab8b3327a3bf8bc734331aee307953b",
+          "page_002.txt": "6a83c5614e655c356a0df67ddcfd327b708c35f675437391cef4c8283403d141",
+          "page_003.txt": "655c19b184e0caacfd13cc73e9557622e2da582715f2f508c6734bc3987bdc44",
+          "page_004.txt": "faa9665de49fe215d7653769cfc706c1105be05a70b0f391b2eebe184331d2d1",
+          "page_005.txt": "2f19f3adb333cbbef81f17fd9eda0233be1792502b02707fe1e6fe99a7db6e4d",
+          "page_006.txt": "16d26abd7b7686e5c7b78d2108bd27e6ca2fa4b466d2ff6a0e7e95b272f5c403",
+          "page_007.txt": "be7564c71bf8701e7cedd340677c2d90dfb29f60483a3a60e2a261b75b1076fe",
+          "page_008.txt": "60e2cda5803496cae7b670bd5e478550125c7b2ee1ab5e00a2619054eed52225",
+          "page_009.txt": "06b2ab84358520c2eaa1973774213d35fc3bc09670f11b115b00250f2491b2e6",
+          "page_010.txt": "88e532c9ed6eb82ee5d8b38bf85f102882f465e86e315c61961435f7cecc9fe9",
+          "page_011.txt": "f04088d71cf8f14f9189f834537c503f3a23b64db2a9befaa622d9752bf85ae1",
+          "page_012.txt": "3bc5aaf243146c9a371de701cf6c0d5f241695446197f50ad10b73af69a19131"
+        },
+        "pages_recomputed": 12,
+        "overall": {
+          "reference_words": 5464,
+          "reference_characters": 30113,
+          "word_errors": 136,
+          "character_errors": 297,
+          "wer": 0.024890190336749635,
+          "cer": 0.009862849931923089
+        },
+        "execution_failures_all_passes": 0
+      },
+      "tesseract": {
+        "result_file": "eval/benchmarks/deployment-onnx-12/20261018T214953126611Z/tesseract/20261018T215046456265Z/results.json",
+        "result_sha256": "21072d77c982b3ff3972d90179834774258d5fadca6145e06cb63f6024459aad",
+        "prediction_sha256": {
+          "page_001.txt": "8f5de0d024f640deec3e392ebbe573cb290eab56b25d8796e7583b008c9dccb5",
+          "page_002.txt": "0fae6e29f5d575b0fa878d58ce72d4e24beade6dce89ce77cd6fed684adc5c6e",
+          "page_003.txt": "e080ad6caa55ee6a22441ef766e189f004e7706e12bc115c15c638cf08cfd333",
+          "page_004.txt": "014565a817227511bd7ed807bd3a27ee2cdab59f9f96607802c42d873c8ec19c",
+          "page_005.txt": "fba8ecbe92251c27a79d59a086310e0fcb236815aa74a905f88741a8e407d0da",
+          "page_006.txt": "07a60f99aa6074ade83f44cca97ac1cbe6126cf50194d49c841683efc6390ffa",
+          "page_007.txt": "ea27406834b8151d1a9ec1c3f320b3c66bbef33030f5b1490971bd489954f632",
+          "page_008.txt": "7272195cf56e15f1010fbe03ac427e0a1afe28947a7e1dfd603a03253a8e6ace",
+          "page_009.txt": "c20ba372acb986ccca06cc04c31118a6c98415dcc4886fcace24520d411e60a0",
+          "page_010.txt": "e53677201a9bb421389286b574a9903697627fb6667aa8b2a2e9a8a631469d59",
+          "page_011.txt": "e517fd7ec10e93d11b93b077b7043ef3d433147ff83fa983e4277e4bcc57f499",
+          "page_012.txt": "57e9c5d2e2b49e5178ff46c81e2e904a316f7e71362ae995780bbf43bb7d0c26"
+        },
+        "pages_recomputed": 12,
+        "overall": {
+          "reference_words": 5464,
+          "reference_characters": 30113,
+          "word_errors": 144,
+          "character_errors": 373,
+          "wer": 0.02635431918008785,
+          "cer": 0.012386676850529672
+        },
+        "execution_failures_all_passes": 0
+      },
+      "paddleocr": {
+        "result_file": "eval/benchmarks/deployment-onnx-12/20261018T214953126611Z/paddleocr/20261018T215125413804Z/results.json",
+        "result_sha256": "0d7848726f6d5cdb4f9cd6e615e7850ff7e91c8a2929e65302935d81a5191b38",
+        "prediction_sha256": {
+          "page_001.txt": "13bf97e1eea8597658ed3d2b8be3e7afcab8b3327a3bf8bc734331aee307953b",
+          "page_002.txt": "94ac16ab3cd88cbb263a05aeb4792eee9ed1ce0bcb814aca4059853ed322ab7b",
+          "page_003.txt": "cde26eb62031706c8103e94240676a62b6d33909720aacdf1f74ae80a6eb7671",
+          "page_004.txt": "85fe946466be6528859103992a9a6321ee061375f6733a113627befb81bb8206",
+          "page_005.txt": "48b1bb6074f0d3ca1757e7d8599f7edada016f17e5a7a67abf9fd94f07b1abe7",
+          "page_006.txt": "3392b476134c4a77b2095887f91c3c748f15751ab4a856d27309d57d5a4a7cfa",
+          "page_007.txt": "d265b4bffc430ecc6465640fd7d1a5b81e0318a18c6884257fc3e9a8f9638642",
+          "page_008.txt": "d8c716e277f5fc02903efa20aa9f80eb4d8c35cc0ba3ae7a8f035c66dc25c095",
+          "page_009.txt": "139bbf891a9ff5effdb3e7dccb9f71e6d4ca2cc1d75bd23fabceca7c01f5a773",
+          "page_010.txt": "a818d6760fe061a707bf80b95149e4f209657ecc2983ae2e00204e295b9b14ad",
+          "page_011.txt": "38cc3ed569854d6e77a2729c47347286048a13265a56c6122857381133b1361a",
+          "page_012.txt": "4104595f4521c08b4e7c5d4199af20c037841e65ca146c48fbf4d3241121f5ee"
+        },
+        "pages_recomputed": 12,
+        "overall": {
+          "reference_words": 5464,
+          "reference_characters": 30113,
+          "word_errors": 136,
+          "character_errors": 340,
+          "wer": 0.024890190336749635,
+          "cer": 0.01129080463587155
+        },
+        "execution_failures_all_passes": 0
+      }
+    }
+  },
+  "paddle_configuration": "PP-OCRv6 medium, converted same cached weights, ONNXRuntime CPU, four intra-op/one inter-op threads, session.set_denormal_as_zero=1",
+  "limitation": "12 sampled pages of one English book; PDF text-layer agreement, not independently verified accuracy; separate sequential engine runs, not interleaved"
+}

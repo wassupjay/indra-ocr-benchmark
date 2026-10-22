@@ -1,0 +1,62 @@
+# Python and test outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environments, model downloads and package caches
+.venv/
+.*-venv/
+.ocr-models/
+.onnx-models/
+.onnx-paddle*/
+.onnx-tools/
+.package-cache/
+.benchmark-temp/
+.cpu-comparison-temp/
+.chart-tools/
+*.whl
+*.onnx
+*.pth
+*.pdiparams
+
+# Source book and private/generated book text
+*.pdf
+/Rich_Dad_Poor_Dad_transcription.md
+/extracted.md
+/eval/*
+!/eval/config.json
+/local/
+
+# Local working notes and obsolete staging copies
+/WORK_SUMMARY.md
+/github/
+/tmp*/
+*.log
+*.tmp
+
+# Keep one frozen evidence bundle; omit other generated ZIPs
+*.zip
+*.zip.sha256
+!/archive/review-evidence.zip
+!/archive/review-evidence.zip.sha256
+
+# Credentials and per-user agent settings
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

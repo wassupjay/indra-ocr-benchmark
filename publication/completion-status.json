@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-10-18T20:13:57.330967+00:00",
+  "phase": "incomplete",
+  "completed": false,
+  "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+  "finished_utc": "2026-10-18T20:13:59.406132+00:00",
+  "last_download_retry_utc": "2026-10-19T01:16:46.446032+00:00",
+  "last_download_retry_error": "urllib HTTPS request to Hugging Face dataset API failed with WinError 10061; no dataset downloaded"
+}

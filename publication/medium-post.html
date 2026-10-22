@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Indra OCR Beat Tesseract, EasyOCR &amp; PaddleOCR in Our CPU Speed Test</title><meta name="description" content="Indra, Tesseract, EasyOCR and PaddleOCR Tiny compared on 114 pages: CPU speed, RAM, two reference checks and the limits of a single-book benchmark."><style>body{max-width:850px;margin:50px auto;padding:0 22px;background:#fbfaf6;color:#152d36;font:20px/1.65 Georgia,serif}h1,h2{font-family:Arial,sans-serif;line-height:1.18}h1{font-size:42px}h2{font-size:28px;margin-top:46px}img{display:block;width:100%;height:auto;margin:24px 0}p:has(img)+p{font:15px/1.5 Arial,sans-serif;color:#53646c}a{color:#21618a}li{margin:12px 0}</style></head><body><main><h1>Indra OCR Beat Tesseract, EasyOCR &amp; PaddleOCR in Our CPU Speed Test</h1>
+<p><em>114 pages, three passes each: Tesseract 5, EasyOCR and PaddleOCR PP-OCRv6 Tiny, tested on one CPU.</em></p>
+<p>A local OCR choice has two costs: waiting for pages and fitting the model into RAM. On this book, Indra led on speed and text agreement; Tesseract used the least memory.</p>
+<p><em>Disclosure: This article and its charts were prepared with AI assistance using recorded benchmark results.</em></p>
+<h2>1. Speed: Indra led this run</h2>
+<p><img alt="CPU OCR throughput: Indra 207.48, Tesseract 58.30, PaddleOCR Tiny 77.18 and EasyOCR 3.51 pages per minute" src="chart-speed.png"></p>
+<p><em>Higher is faster. Median of three passes on the same page images. Chart rendered from saved measurements with AI assistance.</em></p>
+<p>PaddleOCR Tiny finished second for throughput. These timings include image decoding and Tesseract&#x27;s per-page CLI startup; initial loading, PDF rendering, warmup, scoring and writes are excluded.</p>
+<h2>2. Word errors: the reference changes the score</h2>
+<p><img alt="Word error rates against two unverified references; Indra has the lowest rate against both" src="chart-word-errors.png"></p>
+<p><em>Lower means closer text agreement. Filled bars: PDF text layer. Outlined bars: supplied AI-assisted transcription. Chart prepared with AI assistance.</em></p>
+<p>Changing the reference changed the scores even though the OCR output stayed the same. Indra still had the lowest word error rate. WER counts changed, missing and extra words; case and punctuation count. <strong>Neither reference is fully independently verified.</strong> The transcription contains uncertain readings; excluding its 15 flagged pages kept the same ranking. Quote-style normalization also preserved the ranking.</p>
+<h2>3. RAM: Tesseract had the smallest footprint</h2>
+<p><img alt="Peak sampled worker RAM: Indra 0.33 GiB, Tesseract 0.11 GiB, PaddleOCR Tiny 1.32 GiB and EasyOCR 9.77 GiB" src="chart-memory.png"></p>
+<p><em>Lower uses less RAM. Whole-worker memory includes loading and warmup, a broader scope than throughput. Chart prepared with AI assistance.</em></p>
+<p>EasyOCR used the most RAM in this configuration. These are sampled worker peaks, not minimum system requirements; shared memory can be counted more than once and brief peaks can be missed.</p>
+<h2>What this means for this workload</h2>
+<ul><li><strong>Indra:</strong> strongest speed and text-agreement result.</li><li><strong>Tesseract:</strong> smallest measured RAM footprint.</li><li><strong>PaddleOCR Tiny:</strong> second-fastest. EasyOCR was slower and heavier in the configuration tested.</li></ul>
+<h2>How it was tested</h2>
+<p>Same 114 saved RGB pages, 200 DPI, one English book. Each engine had a warmup and three measured passes, four requested inference threads, no GPU, and zero execution failures. Normalized outputs were identical across each engine&#x27;s passes.</p>
+<p>Hardware: i7-12700K, about 96 GiB RAM. Models: Indra 0.3.2; Tesseract 5.5.3; EasyOCR 1.7.2, CRAFT/english_g2 with CPU dynamic quantization; PP-OCRv6 Tiny via ONNX Runtime CPU. This was not an entry-level-PC test or a search for each engine&#x27;s best tuned setup.</p>
+<p><strong>The limits:</strong> One book cannot establish a universal winner. Indra previously measured 32.38 pages/min with matching model hashes; that cross-session difference is unexplained. Both references need independent verification. Handwriting, other languages and low-memory PCs remain untested here.</p>
+<p><a href="https://github.com/wassupjay/indra-ocr-benchmark/blob/main/publication/MEDIUM_FULL_METHODS.md">Full methods and detailed results</a>.</p>
+<p><strong>Which documents should a follow-up cover: receipts, forms or multi-column reports?</strong></p></main></body></html>

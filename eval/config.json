@@ -1,0 +1,6 @@
+{
+  "exclude_lines": [
+    "Rich Dad Poor Dad\\s+Robert T\\. Kiyosaki",
+    "Page \\d+/\\d+\\s+https?://motsach\\.info/?"
+  ]
+}

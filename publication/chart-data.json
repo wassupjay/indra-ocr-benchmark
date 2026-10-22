@@ -1,0 +1,38 @@
+{
+  "source_sha256": {
+    "cpu-four-comparison.json": "e47107d14fcb1beefcd602b94914f631d1b62d2dfe9faa5de84c038f018035a0",
+    "transcription-comparison.json": "910111cef42fc09b8851a96084cde93d5b400d3fa19e6e5239fbd32918a772f3"
+  },
+  "engine_order": [
+    "indra",
+    "tesseract",
+    "paddleocr_tiny",
+    "easyocr"
+  ],
+  "speed_pages_per_minute": [
+    207.48084628206524,
+    58.304694249077976,
+    77.17523371993336,
+    3.5145341078323167
+  ],
+  "peak_memory_gib": [
+    0.327056884765625,
+    0.11469650268554688,
+    1.3159141540527344,
+    9.76651382446289
+  ],
+  "pdf_reference_wer_percent": [
+    2.0569672537421932,
+    2.461751974358127,
+    3.069755146548591,
+    15.9683441826653
+  ],
+  "candidate_reference_wer_percent": [
+    0.38485043687957315,
+    1.068661942751433,
+    4.682622268470343,
+    16.895429694597226
+  ],
+  "chart_axes": "Linear, zero baseline; no truncated axes. Memory converted from MiB to GiB by dividing by 1024.",
+  "reference_status": "Both candidate references unverified; no new inference measurements."
+}

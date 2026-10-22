@@ -1,0 +1,188 @@
+{
+  "configuration_verified_on_control": true,
+  "repeated_measurement_complete": true,
+  "zero_edits_all_passes": true,
+  "identical_normalized_text_all_passes": true,
+  "actual_runtime_matches_request": true,
+  "model_weights_hashed": true,
+  "scope": "three synthetic variants of one 124-word passage; configuration check, not a diverse accuracy benchmark or optimized full-book speed",
+  "dataset": "eval\\benchmarks\\paddle-runtime-verification\\20261018T203002653377Z",
+  "dataset_sha256": "9fbc6430c095b639f133ec5f11ec35fc8ab5be87fd08477e88349f28bbd8d015",
+  "source_dataset_sha256": "55ced4fec0ea3eb357b52967b5fd34d622a92eb1157b063f04609549379132a6",
+  "results_file": "eval\\benchmarks\\paddle-runtime-verification\\20261018T203002653377Z\\paddleocr\\20261018T203144670908Z\\results.json",
+  "results_sha256": "049a0a1d6201cadb87b60161a3add594008d72b3905b9bbfb45db2b10b2dee9f",
+  "images": 3,
+  "measured_passes": 3,
+  "pass_seconds": [
+    305.9520444999798,
+    302.5237302999594,
+    304.54341290006414
+  ],
+  "median_pass_seconds": 304.54341290006414,
+  "pages_per_minute": 0.5910487384570914,
+  "pass_time_cv_percent": 0.5662123619134928,
+  "quality_each_pass": [
+    {
+      "reference_words": 372,
+      "reference_characters": 2241,
+      "word_errors": 0,
+      "character_errors": 0,
+      "wer": 0.0,
+      "cer": 0.0
+    },
+    {
+      "reference_words": 372,
+      "reference_characters": 2241,
+      "word_errors": 0,
+      "character_errors": 0,
+      "wer": 0.0,
+      "cer": 0.0
+    },
+    {
+      "reference_words": 372,
+      "reference_characters": 2241,
+      "word_errors": 0,
+      "character_errors": 0,
+      "wer": 0.0,
+      "cer": 0.0
+    }
+  ],
+  "initialization_seconds": 3.122127000009641,
+  "warmup_seconds": 98.7191024000058,
+  "metadata": {
+    "version": "3.7.0",
+    "paddlepaddle": "3.2.2",
+    "paddlex": "3.7.2",
+    "settings": {
+      "text_detection_model_name": "PP-OCRv6_medium_det",
+      "text_recognition_model_name": "PP-OCRv6_medium_rec",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_textline_orientation": false,
+      "device": "cpu",
+      "cpu_threads": 4,
+      "enable_mkldnn": false,
+      "engine_config": {
+        "paddle_static": {
+          "cpu_threads": 4,
+          "run_mode": "paddle"
+        }
+      }
+    },
+    "effective_runtime": {
+      "detector": {
+        "run_mode": "paddle",
+        "device_type": "cpu",
+        "cpu_threads": 4,
+        "trt_dynamic_shapes": {
+          "x": [
+            [
+              1,
+              3,
+              32,
+              32
+            ],
+            [
+              1,
+              3,
+              736,
+              736
+            ],
+            [
+              1,
+              3,
+              4000,
+              4000
+            ]
+          ]
+        },
+        "device_id": null,
+        "delete_pass": [],
+        "enable_new_ir": true,
+        "enable_cinn": false,
+        "trt_cfg_setting": {},
+        "trt_use_dynamic_shapes": true,
+        "trt_collect_shape_range_info": true,
+        "trt_discard_cached_shape_range_info": false,
+        "trt_dynamic_shape_input_data": null,
+        "trt_shape_range_info_path": null,
+        "trt_allow_rebuild_at_runtime": true,
+        "mkldnn_cache_capacity": 10
+      },
+      "recognizer": {
+        "run_mode": "paddle",
+        "device_type": "cpu",
+        "cpu_threads": 4,
+        "trt_dynamic_shapes": {
+          "x": [
+            [
+              1,
+              3,
+              48,
+              160
+            ],
+            [
+              1,
+              3,
+              48,
+              320
+            ],
+            [
+              8,
+              3,
+              48,
+              3200
+            ]
+          ]
+        },
+        "device_id": null,
+        "delete_pass": [],
+        "enable_new_ir": true,
+        "enable_cinn": false,
+        "trt_cfg_setting": {},
+        "trt_use_dynamic_shapes": true,
+        "trt_collect_shape_range_info": true,
+        "trt_discard_cached_shape_range_info": false,
+        "trt_dynamic_shape_input_data": null,
+        "trt_shape_range_info_path": null,
+        "trt_allow_rebuild_at_runtime": true,
+        "mkldnn_cache_capacity": 10
+      }
+    },
+    "model_hashes": {
+      "detector": {
+        "inference.json": "0f1a7ec35da36173529c7a60238b7f7919e3831929c3f700ad90ad4896adecd5",
+        "inference.pdiparams": "85218d2e3d98f5a21c58b4220627be923a97aee5db3cc71f39536ab31ac53960",
+        "inference.yml": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871"
+      },
+      "recognizer": {
+        "inference.json": "0b2e25e990bd072f1bf77d59d67d508bce6c4bd44af6624e0fb27d6da2cd00e8",
+        "inference.pdiparams": "1b01c79a914587933f615569e75de54f2e638ebb5d3f3b3c1b38c24ede8c7319",
+        "inference.yml": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129"
+      }
+    }
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "logical_cpus": 20,
+    "device": "CPU",
+    "threads": 4
+  },
+  "resources": {
+    "exit_code": 0,
+    "timed_out": false,
+    "wall_seconds": 1015.3682220000192,
+    "sampled_peak_tree_rss_mib": 1197.0234375,
+    "sampled_tree_cpu_seconds": 3478.203125,
+    "mean_busy_cpu_cores_whole_worker": 3.425558383291549,
+    "sampled_peak_tree_threads": 37,
+    "minimum_system_available_ram_mib": 65458.984375,
+    "samples": 7754,
+    "sampling_seconds": 0.1,
+    "scope": "whole worker including imports, initialization, one warmup, all 3 measured passes, scoring and writes; summed RSS can double-count shared pages; CPU/RAM are not inference-only"
+  },
+  "alternate_runtime_tested": false,
+  "onnx_converter_installed": false,
+  "optimized_full_book_speed_established": false
+}

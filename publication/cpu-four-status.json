@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "phase": "completed",
+  "engines": [
+    "indra",
+    "tesseract",
+    "easyocr",
+    "paddleocr_tiny"
+  ],
+  "checked_utc": "2026-10-19T20:00:22.756567+00:00",
+  "dataset": "eval\\benchmarks\\cpu-four-114\\20261019T151429710767Z",
+  "probes": "eval\\cpu-four-probes\\20261019T151413190432Z",
+  "finished_utc": "2026-10-19T17:04:23.088532+00:00"
+}

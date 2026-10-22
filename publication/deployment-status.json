@@ -1,0 +1,60 @@
+{
+  "phase": "completed",
+  "dataset": "eval\\benchmarks\\deployment-onnx-12\\20261018T214953126611Z",
+  "source_pdf_pages": [
+    9,
+    15,
+    26,
+    43,
+    59,
+    65,
+    70,
+    100,
+    101,
+    102,
+    110,
+    111
+  ],
+  "completed": true,
+  "resources": {
+    "indra": {
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_seconds": 52.142593499971554,
+      "sampled_peak_tree_rss_mib": 296.24609375,
+      "sampled_tree_cpu_seconds": 220.59375,
+      "mean_busy_cpu_cores_whole_worker": 4.230586459036035,
+      "sampled_peak_tree_threads": 52,
+      "minimum_system_available_ram_mib": 66345.02734375,
+      "samples": 278,
+      "sampling_seconds": 0.1,
+      "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+    },
+    "tesseract": {
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_seconds": 33.200396200001705,
+      "sampled_peak_tree_rss_mib": 112.80078125,
+      "sampled_tree_cpu_seconds": 29.53125,
+      "mean_busy_cpu_cores_whole_worker": 0.8894848670510288,
+      "sampled_peak_tree_threads": 13,
+      "minimum_system_available_ram_mib": 66481.36328125,
+      "samples": 247,
+      "sampling_seconds": 0.1,
+      "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+    },
+    "paddleocr": {
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_seconds": 657.3909036000259,
+      "sampled_peak_tree_rss_mib": 3037.0625,
+      "sampled_tree_cpu_seconds": 2387.578125,
+      "mean_busy_cpu_cores_whole_worker": 3.6319001554859756,
+      "sampled_peak_tree_threads": 39,
+      "minimum_system_available_ram_mib": 63513.48046875,
+      "samples": 4741,
+      "sampling_seconds": 0.1,
+      "scope": "entire engine worker, including imports, loading, excluded warmup, three passes, scoring and output writes; summed RSS can double-count shared memory"
+    }
+  }
+}

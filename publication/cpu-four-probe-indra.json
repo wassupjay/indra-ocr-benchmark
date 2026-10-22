@@ -1,0 +1,32 @@
+{
+  "engine": "indra",
+  "metadata": {
+    "version": "0.3.2",
+    "mode": "ocr",
+    "furniture": true,
+    "output": "page.text (plain recognized lines)",
+    "model_hashes": {
+      "det.onnx": "46b0050ce4c4692f887a1a9c038480223af1c7a91b3fcced2657d9cf00290dc4",
+      "order.onnx": "23635dd2324b4ccc00c408af961273a2dedd2e4f0386bc54dba678c41bcf6b46",
+      "orient.onnx": "8d7bfce5d08bcad55955f41ca494a7f9d9d3ed5d5b6da1f6f276d5c509590729",
+      "rec.onnx": "e243be069b357e56a0e867a21d7482e498df42fb19678bfb67a25f48b1f06151",
+      "rec_cjk.onnx": "4cec840b55e1bb7f375daf30a2975404a867a71ac1a5bc5b1629c4909ce16baa",
+      "script.onnx": "5ba37030e817affede0097a7503b6829624104166c6e0b6aacecacf919fc7d11"
+    }
+  },
+  "initialization_seconds": 7.572027099959087,
+  "control_score": {
+    "reference_words": 124,
+    "reference_characters": 747,
+    "word_errors": 0,
+    "character_errors": 0,
+    "wer": 0.0,
+    "cer": 0.0,
+    "counts": {
+      "replace": 0,
+      "delete": 0,
+      "insert": 0
+    }
+  },
+  "scope": "one known-text control image; a functional probe, not full-book results"
+}

@@ -1,0 +1,19 @@
+{
+  "indra": {
+    "pages_compared": 114,
+    "all_normalized_outputs_match": true,
+    "changed_prediction_files": []
+  },
+  "tesseract": {
+    "pages_compared": 114,
+    "all_normalized_outputs_match": true,
+    "changed_prediction_files": []
+  },
+  "paddleocr": {
+    "pages_compared": 114,
+    "all_normalized_outputs_match": false,
+    "changed_prediction_files": [
+      "page_017.txt"
+    ]
+  }
+}

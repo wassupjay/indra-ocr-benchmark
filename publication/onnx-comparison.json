@@ -1,0 +1,152 @@
+{
+  "all_passes_zero_edits": true,
+  "normalized_outputs_match_baseline": true,
+  "comparison_completed": true,
+  "flush_denormals": true,
+  "dataset": "eval\\benchmarks\\paddle-onnx-comparison\\20261018T214735060398Z",
+  "dataset_sha256": "12732905bce906db54338e50e0b426441a122a08673e1f93027a8505676a43fc",
+  "baseline_results_sha256": "049a0a1d6201cadb87b60161a3add594008d72b3905b9bbfb45db2b10b2dee9f",
+  "results_file": "eval\\benchmarks\\paddle-onnx-comparison\\20261018T214735060398Z\\paddleocr\\20261018T214741388351Z\\results.json",
+  "results_sha256": "b0a84289f985af826855fcef1b10951542891e5248832ab5bf313727b5ff946a",
+  "conversion": {
+    "converter": "Paddle2ONNX 2.1.0 native export API",
+    "converter_paddle": "3.0.0.dev20250426",
+    "opset_requested": 19,
+    "auto_upgrade_opset": true,
+    "onnx_checker": true,
+    "fp16": false,
+    "quantized": false,
+    "python_post_optimizer": null,
+    "baseline_results_sha256": "049a0a1d6201cadb87b60161a3add594008d72b3905b9bbfb45db2b10b2dee9f",
+    "wheel_sha256": {
+      "paddle2onnx-2.1.0-cp311-cp311-win_amd64.whl": "478993e17ed0212b79a4d6e2d8d0582ebb19c7230b7f365d51222833e98581b3",
+      "paddlepaddle-3.0.0.dev20250426-cp311-cp311-win_amd64.whl": "f62aaab2bd8d3ad4f4f7781bdeed43403546057b7afcdc10a4b33847b2617f1f",
+      "onnx-1.17.0-cp311-cp311-win_amd64.whl": "95c03e38671785036bb704c30cd2e150825f6ab4763df3a4f1d249da48525957"
+    },
+    "models": {
+      "detector": {
+        "source_sha256": {
+          "inference.json": "0f1a7ec35da36173529c7a60238b7f7919e3831929c3f700ad90ad4896adecd5",
+          "inference.pdiparams": "85218d2e3d98f5a21c58b4220627be923a97aee5db3cc71f39536ab31ac53960",
+          "inference.yml": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871"
+        },
+        "onnx_sha256": "fb7111b86f97ad58ae9a61067a1fce5d8c9efa378b9527a9df0a93d5180521bd",
+        "opsets": [
+          {
+            "domain": "",
+            "version": 19
+          }
+        ],
+        "onnx_full_check_passed": true
+      },
+      "recognizer": {
+        "source_sha256": {
+          "inference.json": "0b2e25e990bd072f1bf77d59d67d508bce6c4bd44af6624e0fb27d6da2cd00e8",
+          "inference.pdiparams": "1b01c79a914587933f615569e75de54f2e638ebb5d3f3b3c1b38c24ede8c7319",
+          "inference.yml": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129"
+        },
+        "onnx_sha256": "e6bb59d9c316b9ca39c8516a4d54347d81d1cbe364d89124a5990d348d376fa0",
+        "opsets": [
+          {
+            "domain": "",
+            "version": 19
+          }
+        ],
+        "onnx_full_check_passed": true
+      }
+    }
+  },
+  "baseline_median_pass_seconds": 304.54341290006414,
+  "onnx_median_pass_seconds": 19.51300320000155,
+  "onnx_pass_seconds": [
+    19.105621099995915,
+    19.53217630001018,
+    19.51300320000155
+  ],
+  "baseline_control_images_per_minute": 0.5910487384570914,
+  "onnx_control_images_per_minute": 9.22461797167059,
+  "observed_speed_ratio": 15.607203554399046,
+  "onnx_pass_time_cv_percent": 1.242946410818722,
+  "resources": {
+    "exit_code": 0,
+    "timed_out": false,
+    "wall_seconds": 64.87533629999962,
+    "sampled_peak_tree_rss_mib": 1357.64453125,
+    "sampled_tree_cpu_seconds": 233.484375,
+    "mean_busy_cpu_cores_whole_worker": 3.5989697829127305,
+    "sampled_peak_tree_threads": 38,
+    "minimum_system_available_ram_mib": 65230.05078125,
+    "samples": 470,
+    "sampling_seconds": 0.1,
+    "scope": "whole worker including imports, loading, warmup, all three passes, scoring and writes; summed RSS may double-count shared memory"
+  },
+  "metadata": {
+    "version": "3.7.0",
+    "paddlepaddle": "3.2.2",
+    "paddlex": "3.7.2",
+    "settings": {
+      "text_detection_model_name": "PP-OCRv6_medium_det",
+      "text_recognition_model_name": "PP-OCRv6_medium_rec",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_textline_orientation": false,
+      "device": "cpu",
+      "cpu_threads": 4,
+      "enable_mkldnn": true,
+      "engine": "onnxruntime",
+      "text_detection_model_dir": ".onnx-models\\PP-OCRv6_medium\\detector",
+      "text_recognition_model_dir": ".onnx-models\\PP-OCRv6_medium\\recognizer",
+      "engine_config": {
+        "onnxruntime": {
+          "providers": [
+            "CPUExecutionProvider"
+          ],
+          "intra_op_num_threads": 4,
+          "inter_op_num_threads": 1
+        }
+      }
+    },
+    "onnxruntime": "1.31.0",
+    "effective_runtime": {
+      "detector": {
+        "device_type": "cpu",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "intra_op_num_threads": 4,
+        "inter_op_num_threads": 1,
+        "actual_providers": [
+          "CPUExecutionProvider"
+        ],
+        "actual_intra_op_threads": 4,
+        "actual_inter_op_threads": 1,
+        "denormal_as_zero": "1"
+      },
+      "recognizer": {
+        "device_type": "cpu",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "intra_op_num_threads": 4,
+        "inter_op_num_threads": 1,
+        "actual_providers": [
+          "CPUExecutionProvider"
+        ],
+        "actual_intra_op_threads": 4,
+        "actual_inter_op_threads": 1,
+        "denormal_as_zero": "1"
+      }
+    },
+    "model_hashes": {
+      "detector": {
+        "inference.onnx": "fb7111b86f97ad58ae9a61067a1fce5d8c9efa378b9527a9df0a93d5180521bd",
+        "inference.yml": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871"
+      },
+      "recognizer": {
+        "inference.onnx": "e6bb59d9c316b9ca39c8516a4d54347d81d1cbe364d89124a5990d348d376fa0",
+        "inference.yml": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129"
+      }
+    }
+  },
+  "limitation": "three synthetic variants of one original passage; separate sequential runs, not interleaved; a control-set runtime comparison, not universal accuracy/speed"
+}

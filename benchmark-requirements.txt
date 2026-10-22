@@ -1,0 +1,10 @@
+paddleocr==3.7.0
+paddlepaddle==3.2.2
+paddlex==3.7.2
+indra-ocr==0.3.2
+rapidfuzz==3.14.6
+pypdfium2==5.14.0
+Pillow==13.0.0
+psutil==7.2.2
+onnxruntime==1.31.0
+numpy==2.3.5
